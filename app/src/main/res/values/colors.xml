@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Marina">#0A2647</color>
+    <color name="Navy">#144272</color>
+    <color name="Oscuro">#205295</color>
+    <color name="Azul">#2C74B3</color>
+    <color name="Fondo">#E1F7F5</color>
+    <color name="Rojo">#B8001F</color>
+    <color name="Primario">#3C58E6</color>
+    <color name="acceder">#3CE6D1</color>
+</resources>

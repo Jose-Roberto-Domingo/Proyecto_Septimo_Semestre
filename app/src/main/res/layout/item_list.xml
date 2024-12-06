@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    android:id="@+id/item_list"
+    android:background="?android:attr/selectableItemBackground"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"
+            android:id="@+id/img"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/Primario"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombre"
+            android:text="Nombre Producto"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/Navy"
+            android:layout_toRightOf="@+id/img"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoria"
+            android:text="Categoria del Producto"
+            android:textSize="25sp"
+            android:textColor="@color/Navy"
+            android:layout_toRightOf="@+id/img"
+            android:layout_below="@+id/nombre"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/precio"
+            android:text="Precio del Producto"
+            android:textSize="25sp"
+            android:textColor="@color/Navy"
+            android:layout_toRightOf="@+id/img"
+            android:layout_below="@+id/categoria"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

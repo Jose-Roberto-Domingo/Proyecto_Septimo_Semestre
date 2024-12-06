@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "40030070768",
+    "firebase_url": "https://ecommerce-11-2024-default-rtdb.firebaseio.com",
+    "project_id": "ecommerce-11-2024",
+    "storage_bucket": "ecommerce-11-2024.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40030070768:android:e382bd1c9f67977399df35",
+        "android_client_info": {
+          "package_name": "com.company.comparativeprice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuSILqyOkFWGJJ_q9_4-AWARkvgzVRVK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40030070768:android:952a9d5ef172a98999df35",
+        "android_client_info": {
+          "package_name": "com.example.e_commerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuSILqyOkFWGJJ_q9_4-AWARkvgzVRVK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

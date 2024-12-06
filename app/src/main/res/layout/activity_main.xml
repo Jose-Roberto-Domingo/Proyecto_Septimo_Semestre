@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título del fragmento -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Barra de búsqueda -->
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            style="@style/MaterialSearchBarLight"
+            app:mt_speechMode="false"
+            app:mt_hint="Buscar"
+            app:mt_navIconEnabled="true"
+            app:mt_placeholder="Buscar"
+            android:background="@color/Azul"
+            app:mt_maxSuggestionsCount="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchBar" />
+
+        <!-- Sección Productos (RecyclerView) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Productos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- RecyclerView para mostrar los productos -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:paddingTop="8dp"
+            android:orientation="vertical" />
+
+        <!-- Sección Recientes -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recientes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <ListView
+            android:id="@+id/lv_recientes"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:cacheColorHint="@color/Marina"
+            android:textColor="@color/Navy"
+            android:divider="@android:color/black"
+            android:dividerHeight="1dp" />
+
+        <!-- Sección Última Búsqueda -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Última Búsqueda"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <ListView
+            android:id="@+id/lv_ultima_busqueda"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:cacheColorHint="@color/Marina"
+            android:divider="@android:color/black"
+            android:dividerHeight="1dp"
+            android:textColor="@color/Navy" />
+
+        <!-- Sección Comentarios -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comentarios"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <ListView
+            android:id="@+id/lv_comentarios"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:cacheColorHint="@color/Marina"
+            android:textColor="@color/Navy"
+            android:divider="@android:color/black"
+            android:dividerHeight="1dp" />
+
+        <Button
+            android:id="@+id/btn_agregar_comentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Comentario"
+            android:backgroundTint="@color/Marina"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

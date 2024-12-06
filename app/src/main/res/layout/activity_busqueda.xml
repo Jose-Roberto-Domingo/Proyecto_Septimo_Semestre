@@ -1,0 +1,116 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/Fondo">
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        style="@style/MaterialSearchBarLight"
+        app:mt_speechMode="false"
+        app:mt_hint="Buscar"
+        app:mt_navIconEnabled="true"
+        app:mt_placeholder="Buscar"
+        android:padding="2dp"
+        android:background="@color/Azul"
+        app:mt_maxSuggestionsCount="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchBar" />
+    <Space
+        android:layout_height="15dp"
+        android:layout_width="wrap_content"
+        />
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultados de Búsqueda"
+        android:textColor="@color/Rojo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Contenedor dinámico -->
+    <FrameLayout
+        android:id="@+id/contenedorDinamico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <!-- Vista de Resultados -->
+        <LinearLayout
+            android:id="@+id/layoutResultados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Lista de productos del Ecommerce 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Productos Ebay"
+                android:textColor="@color/Primario"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <ListView
+                android:id="@+id/listViewEcommerce1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:choiceMode="singleChoice"
+                android:textColor="@android:color/black"
+                android:dividerHeight="1dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Lista de productos del Ecommerce 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Productos Walmart"
+                android:textStyle="bold"
+                android:textColor="@color/Primario"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <ListView
+                android:id="@+id/listViewEcommerce2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textColor="@android:color/black"
+                android:choiceMode="singleChoice"
+                android:dividerHeight="1dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Botón Comparar -->
+            <Button
+                android:id="@+id/btnComparar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comparar"
+                android:textStyle="bold|italic"
+                android:textSize="22dp"
+                android:enabled="false"
+                android:backgroundTint="@color/Navy"
+                android:textColor="@color/white" />
+            <!-- Botón Volver -->
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Rojo"
+                android:textStyle="bold|italic"
+                android:textSize="22dp"
+                android:text="Volver Inicio"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
